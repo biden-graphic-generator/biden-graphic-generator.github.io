@@ -398,7 +398,7 @@ p > label > span {
 
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-weight: bold;
   color: white;
   float: right;
   margin-left: 5px;
