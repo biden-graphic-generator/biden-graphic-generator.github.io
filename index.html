@@ -19,6 +19,10 @@
     </section>
 
     <section class="main-content">
+        <button type="button" class="collapsible">List of graphics</button>
+        <div class="content">
+          <p>Testing...</p>
+        </div>
         <img src="previews.jpg" alt="" class="previewImage">
         <div id="pluginConfig">
             <div class="imageConfig">
@@ -121,6 +125,23 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://unpkg.com/watermark@1.0.2/dist/jquery.watermark.min.js" type="text/javascript"></script>
     <script src="javascripts/main.js" type="text/javascript"></script>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 
 </body>
 
