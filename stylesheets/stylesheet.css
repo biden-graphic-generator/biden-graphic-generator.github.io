@@ -383,7 +383,7 @@ p > label > span {
   background-color: #777;
   color: white;
   cursor: pointer;
-  padding: 0px;
+  padding: 16px;
   width: 100%;
   border: none;
   text-align: left;
