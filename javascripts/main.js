@@ -64,7 +64,7 @@ $(function() {
 
         outputWidth: 'auto',
         outputHeight: 'auto',
-        outputType: 'jpeg', // jpeg | png | webm
+        outputType: 'png', // jpeg | png | webm
 
         done: function(imgURL) {
           $withWatermark.html('<img id="imageDemo" src="' + imgURL + '">');
