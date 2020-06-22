@@ -413,6 +413,6 @@ p > label > span {
   padding: 0 0px;
   background-color: #f1f1f1;
   max-height: 0;
-  overflow: hidden;
+  overflow: auto;
   transition: max-height 0.2s ease-out;
 }
