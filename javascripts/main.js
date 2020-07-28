@@ -50,7 +50,7 @@ $(function() {
     var config = $.extend(
       {},
       {
-        path: 'BidenPresident.png',
+        path: 'BidenLogo.png',
 
         text: '',
         textWidth: 130,
