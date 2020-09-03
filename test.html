@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biden Graphic Generator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+</head>
+
+<body>
+    <section class="page-header">
+        <h1 class="project-name">BIDEN GRAPHIC GENERATOR</h1>
+        <h2 class="project-tagline">A tool to help you easily create state-specific Joe Biden graphics!</h2>
+    </section>
+
+    <section class="main-content">
+        <b><a href="https://docs.google.com/document/d/1CNDUgTmwJfRdYbyf1noAqU7B7lmpoYJsLls0Ef2-u-E/edit?usp=sharing" target="_blank">Click here</a></b> to see an index of available graphics.
+        <br><br>
+        <div id="pluginConfig">
+            <div class="imageConfig">
+                <h3>Select a graphic and state, and then click "Submit".</h3>
+                <form id="watermarkConfig">
+                    <p>
+                        <label><span>Graphic:</span>
+                            <select name="graphic" id="graphic">
+                                <option value="images/IgnoreThePolls.png">Ignore the Polls</option>
+                                <option value="images/ThisIsTheUSA.png">This is the USA</option>
+                                <option value="images/VotingIsASacredRight.png">Voting is a Sacred Right</option>
+                                <option value="images/ProtectBuildObamacare.png">Protect & Build on Obamacare</option>
+                                <option value="images/ProtectSocialSecurity.png">Protect Social Security</option>
+                                <option value="images/EndCitizensUnited.png">End Citizens United</option>
+                                <option value="images/DreamersAmericans.png">Dreamers are Americans</option>
+                                <option value="images/ChooseBetweenRentHunger.png">Choose Between Rent & Hunger</option>
+                                <option value="images/BuildBackBetter.png">Build Back Better</option>
+                                <option value="images/BanAssaultWeapons.png">Ban Assault Weapons</option>
+                                <option value="images/BringItAll.jpg">Bring It All</option>
+                                <option value="images/HopeOverFear.jpg">Hope Over Fear</option>
+                                <option value="images/VoteForDecency.jpg">Vote for Decency</option>
+                                <option value="images/TransformOurNation.jpg">Transform Our Nation</option>
+                                <option value="images/ACampaignForEveryone.jpg">A Campaign for Everyone</option>
+                                <option value="images/LeadersListen.jpg">Leaders Listen</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label><span>State:</span>
+                            <select name="path" id="path">
+                                <option value="BidenHarrisLogo.png">Select...</option>
+                                <option value="AlabamaForBiden.png">Alabama</option>
+                                <option value="AlaskaForBiden.png">Alaska</option>
+                                <option value="ArizonaForBiden.png">Arizona</option>
+                                <option value="ArkansasForBiden.png">Arkansas</option>
+                                <option value="CaliforniaForBiden.png">California</option>
+                                <option value="ColoradoForBiden.png">Colorado</option>
+                                <option value="ConnecticutForBiden.png">Connecticut</option>
+                                <option value="DelawareForBiden.png">Delaware</option>
+                                <option value="FloridaForBiden.png">Florida</option>
+                                <option value="GeorgiaForBiden.png">Georgia</option>
+                                <option value="HawaiiForBiden.png">Hawaii</option>
+                                <option value="IdahoForBiden.png">Idaho</option>
+                                <option value="IllinoisForBiden.png">Illinois</option>
+                                <option value="IndianaForBiden.png">Indiana</option>
+                                <option value="IowaForBiden.png">Iowa</option>
+                                <option value="KansasForBiden.png">Kansas</option>
+                                <option value="KentuckyForBiden.png">Kentucky</option>
+                                <option value="LouisianaForBiden.png">Louisiana</option>
+                                <option value="MaineForBiden.png">Maine</option>
+                                <option value="MarylandForBiden.png">Maryland</option>
+                                <option value="MassachusettsForBiden.png">Massachusetts</option>
+                                <option value="MichiganForBiden.png">Michigan</option>
+                                <option value="MinnesotaForBiden.png">Minnesota</option>
+                                <option value="MississippiForBiden.png">Mississippi</option>
+                                <option value="MissouriForBiden.png">Missouri</option>
+                                <option value="MontanaForBiden.png">Montana</option>
+                                <option value="NebraskaForBiden.png">Nebraska</option>
+                                <option value="NevadaForBiden.png">Nevada</option>
+                                <option value="NewHampshireForBiden.png">New Hampshire</option>
+                                <option value="NewJerseyForBiden.png">New Jersey</option>
+                                <option value="NewMexicoForBiden.png">New Mexico</option>
+                                <option value="NewYorkForBiden.png">New York</option>
+                                <option value="NorthCarolinaForBiden.png">North Carolina</option>
+                                <option value="NorthDakotaForBiden.png">North Dakota</option>
+                                <option value="OhioForBiden.png">Ohio</option>
+                                <option value="OklahomaForBiden.png">Oklahoma</option>
+                                <option value="OregonForBiden.png">Oregon</option>
+                                <option value="PennsylvaniaForBiden.png">Pennsylvania</option>
+                                <option value="RhodeIslandForBiden.png">Rhode Island</option>
+                                <option value="SouthCarolinaForBiden.png">South Carolina</option>
+                                <option value="SouthDakotaForBiden.png">South Dakota</option>
+                                <option value="TennesseeForBiden.png">Tennessee</option>
+                                <option value="TexasForBiden.png">Texas</option>
+                                <option value="UtahForBiden.png">Utah</option>
+                                <option value="VermontForBiden.png">Vermont</option>
+                                <option value="VirginiaForBiden.png">Virginia</option>
+                                <option value="WashingtonForBiden.png">Washington</option>
+                                <option value="WashingtonDCForBiden.png">Washington, D.C.</option>
+                                <option value="WestVirginiaForBiden.png">West Virginia</option>
+                                <option value="WisconsinForBiden.png">Wisconsin</option>
+                                <option value="WyomingForBiden.png">Wyoming</option>
+                                
+                            </select>
+                        </label>
+                    </p>
+                    <p class="buttons">
+                        <input type="submit" id="submit" value="Submit">
+                    </p>
+                </form>
+            </div>
+            <div id="withWatermark" class="imageWrap">
+                <img class="displayImage" id="imageDemo" src="images/IgnoreThePolls.jpg" alt="">
+            </div>
+            Desktop users: right-click the image and select "Save image as..."
+            <br>Mobile users: tap and hold on the image and select "Save Image"
+        </div>
+
+        <footer class="site-footer">
+            <span class="site-footer-owner">All graphics were created by the Biden for President campaign or the Team Joe Volunteer Content Team.
+This tool was created by <a href="https://twitter.com/_derekchan" target="_blank">Derek Chan</a>.</span>
+
+            <span class="site-footer-credits">Built with <a href="https://github.com/lelinhtinh/watermark" target="_blank">Watermark</a> (MIT License © <a
+                href="https://github.com/lelinhtinh" target="_blank">lelinhtinh</a>).<br>This page was generated by <a href="https://pages.github.com" target="_blank">GitHub
+                    Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme" target="_blank">Cayman theme</a> by <a
+                    href="https://twitter.com/jasonlong" target="_blank">Jason Long</a>.</span>
+        </footer>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://unpkg.com/watermark@1.0.2/dist/jquery.watermark.min.js" type="text/javascript"></script>
+    <script src="javascripts/main.js" type="text/javascript"></script>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
+
+</body>
+
+</html>
