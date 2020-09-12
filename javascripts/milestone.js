@@ -60,7 +60,7 @@ $(function() {
 
         gravity: 's', // nw | n | ne | w | e | sw | s | se | c
         opacity: 1.0,
-        margin: 60,
+        margin: 58,
 
         outputWidth: 'auto',
         outputHeight: 'auto',
