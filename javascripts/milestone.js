@@ -50,7 +50,7 @@ $(function() {
     var config = $.extend(
       {},
       {
-        path: 'milestone_numbers/Members_5000.png',
+        path: 'BidenHarrisLogo.png',
 
         text: '',
         textWidth: 130,
@@ -58,9 +58,9 @@ $(function() {
         textColor: 'white',
         textBg: 'rgba(0, 0, 0, 0.4)',
 
-        gravity: 'n', // nw | n | ne | w | e | sw | s | se | c
+        gravity: 's', // nw | n | ne | w | e | sw | s | se | c
         opacity: 1.0,
-        margin: 290,
+        margin: 60,
 
         outputWidth: 'auto',
         outputHeight: 'auto',
