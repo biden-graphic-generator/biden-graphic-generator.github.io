@@ -64,7 +64,7 @@ $(function() {
       obj
     );
     $('<img>', {
-      src: 'invite/InviteYourFriends_24Days.png',
+      src: 'invite/InviteYourFriends_23Days.png',
     }).watermark(config);
   }
 
