@@ -1,40 +1,13 @@
-
-	
 <!DOCTYPE html>
-<html class="no-js eng-lang"
-lang="en-US"	>
+<html class="no-js eng-lang" lang="en-US">
+
 <head>
-	<meta charset="utf-8"><meta name="google" value="notranslate">
+<meta charset="utf-8">
+<meta name="google" value="notranslate">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">	<!--
-
- _______   _______ .___  ___.   ______     ______ .______           ___   .___________. __    ______
-|       \ |   ____||   \/   |  /  __  \   /      ||   _  \         /   \  |           ||  |  /      |
-|  .--.  ||  |__   |  \  /  | |  |  |  | |  ,----'|  |_)  |       /  ^  \ `---|  |----`|  | |  ,----'
-|  |  |  ||   __|  |  |\/|  | |  |  |  | |  |     |      /       /  /_\  \    |  |     |  | |  |
-|  '--'  ||  |____ |  |  |  | |  `--'  | |  `----.|  |\  \----. /  _____  \   |  |     |  | |  `----.
-|_______/ |_______||__|  |__|  \______/   \______|| _| `._____|/__/     \__\  |__|     |__|  \______|
-
-.__   __.      ___   .___________. __    ______   .__   __.      ___       __
-|  \ |  |     /   \  |           ||  |  /  __  \  |  \ |  |     /   \     |  |
-|   \|  |    /  ^  \ `---|  |----`|  | |  |  |  | |   \|  |    /  ^  \    |  |
-|  . `  |   /  /_\  \    |  |     |  | |  |  |  | |  . `  |   /  /_\  \   |  |
-|  |\   |  /  _____  \   |  |     |  | |  `--'  | |  |\   |  /  _____  \  |  `----.
-|__| \__| /__/     \__\  |__|     |__|  \______/  |__| \__| /__/     \__\ |_______|
-
-  ______   ______   .__   __. ____    ____  _______ .__   __. .___________. __    ______   .__   __.
- /      | /  __  \  |  \ |  | \   \  /   / |   ____||  \ |  | |           ||  |  /  __  \  |  \ |  |
-|  ,----'|  |  |  | |   \|  |  \   \/   /  |  |__   |   \|  | `---|  |----`|  | |  |  |  | |   \|  |
-|  |     |  |  |  | |  . `  |   \      /   |   __|  |  . `  |     |  |     |  | |  |  |  | |  . `  |
-|  `----.|  `--'  | |  |\   |    \    /    |  |____ |  |\   |     |  |     |  | |  `--'  | |  |\   |
- \______| \______/  |__| \__|     \__/     |_______||__| \__|     |__|     |__|  \______/  |__| \__|
-
-
-Made by Wide Eye, 2020
-
--->
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-d738c8070f86ea68e66",applicationID:"387338526"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(c(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(5),c=e(6),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,n){s[n]=i(p+n,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(l+"tracer",[u.now(),e,t],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&d("lcp",[t[t.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var n=Math.round(e.timeStamp),t={type:e.type};n<=p.now()?t.fid=p.now()-n:n>p.offset&&n<=Date.now()?(n-=p.offset,t.fid=p.now()-n):n=p.now(),g=!0,d("timing",["fi",n,t])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(4),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e){function n(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,n,!1)}n.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],5:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],6:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],7:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function t(t,r,i,o){if(!p.aborted||o){e&&e(t,r,i);for(var a=n(i),c=v(t),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[t]];return d&&d.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(t)}function y(e,n){u(e,function(e,t){n=n||"feature",w[t]=n,n in s||(s[n]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(5),s={},d={},p=n.exports=i();p.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(w,function(n,t){e[n]||(e[n]=t)});var t=a();f("mark",["onload",t+E.offset],null,"api"),f("timing",["load",t]);var r=l.createElement("script");r.src="https://"+e.agent,n.parentNode.insertBefore(r,n)}}function i(){"complete"===l.readyState&&o()}function o(){f("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-E.offset}var c=(new Date).getTime(),f=e("handle"),u=e(5),s=e("ee"),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,y=g&&g.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var h=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1177.min.js"},b=g&&y&&y[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:c,now:a,origin:h,features:{},xhrWrappable:b,userAgent:d};e(1),e(2),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),f("mark",["firstbyte",c],null,"api");var x=0,O=e(7)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(6),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof t?t(r,a):t||{}}catch(u){p([u,"",[r,a,i],c])}s(n+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(n+"err",[r,a,d],c),d}finally{s(n+"end",[r,a,f],c)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<n.length;f++)c=n[f],a=e[c],r(a)||(e[c]=t(a,u?c+i:i,o,c))}function s(t,r,i){if(!f||n){var o=f;f=!0;try{e.emit(t,r,i,n)}catch(a){p([a,t,r,i])}f=o}}function d(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){p([r])}for(var i in e)c.call(e,i)&&(n[i]=e[i]);return n}function p(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-
 <script>
 (function(w, d, s, l, i) {
 	w[l] = w[l] || [];
@@ -50,11 +23,6 @@ Made by Wide Eye, 2020
 	f.parentNode.insertBefore(j, f);
 })(window, document, 'script', 'dataLayer', 'GTM-NX528GP');
 </script>
-
-
-
-
-
 
 <script type="text/javascript">
 window.customPixelTracking = function(data) {
@@ -104,28 +72,17 @@ window.customPixelTracking = function(data) {
 
 <link rel='dns-prefetch' href='//s7.addthis.com' />
 <link rel='dns-prefetch' href='//addevent.com' />
-<link rel='stylesheet' id='all-css-0' href='https://www.demconvention.com/_static/??-eJx1jkGOwjAMRS+Ea6gEmlkgzhKM23pw0ih2hJjTT1rBAqmzzFee38NHBpqTc3LMWkdJhlTN5wj+EHcuMDDfkKztPoD5U9m6KKlr0w43cBPnXNgMYlUXlTTWoEDR0DlmDc6GGpZ1ZLBmoYlLm3gM9AQVc5jmIr/tblBcjf/LOBSaYBBdUnOZMderCmEwY7e1++PPZrpPHFtUriUrv9FrFb299FtQrPCu+GHPge7w3e1X4+u9IJd4Ppz2h+NXf+z7PwgGicA=' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-0' href='https://www.demconvention.com/_static/??-eJx1jkFuwkAMRS9U4yKBKIuqZxmMk7j1TKyxR4ievpMIFkjpzvr63+/hzYDmElwCTdsoxZGax5whbhLBFQbmK5L3PAbwuCv7LkvZ9egNN+YuwVbZHXLTEJUytqRA2TE4m6ZgR01LOjJ4p9DEtUc8JrqDigdMc5Xf/jcprsT/YZwqTTCILqpWZ7R2USFM7hy+er90NtVj4tylrFVTfk4vTfT6wG+NcoOnxTeHJfpZaY97qX/lz/3xfN4fTu+Hjz/vyIkM' type='text/css' media='all' />
 <script id='search-filter-plugin-build-js-extra'>
 var SF_LDATA = {"ajax_url":"https:\/\/www.demconvention.com\/wp-admin\/admin-ajax.php","home_url":"https:\/\/www.demconvention.com\/"};
 </script>
-<script type='text/javascript' src='https://www.demconvention.com/_static/??-eJylzsEKgzAQBNAfatyIpbfSb9F1qxvWTZpNkP59g/bSc2FgLsNjYE+OFaXOZBBaXpXy+1tdsAu0AUYtpAWS1IXVwGjMuLonS6HsUo6Q6iSMMJpROZzfyVRZ5m5j/UPENRo14Hx2Wo/t3t/81fth6H34APQ/S3s='></script>
+<script type='text/javascript' src='https://www.demconvention.com/_static/??-eJylzsEKwjAQBNAfMl2qSNuD+C1turUbtpuYzVL8e4P14lkYmMvwGNiTI/FsMyqEmqdhfn2rCXqCOvBRCkqBxPYgUVAcs1/dQlwwu5QjJJuYPIyqWD7O72Qy4rnZSP4Q/RoVK3A8O6z7dmuvQz/03aU9hzf1LUue'></script>
 <meta name="generator" content="WPML ver:4.2.9 stt:1,2;" />
 <!-- Stream WordPress user activity plugin v3.4.3 -->
 <style type='text/css'>img#wpstats{display:none}</style><link rel="icon" href="https://www.demconvention.com/wp-content/uploads/2020/03/DNC_2020_Logo_Icon-1.png?w=32" sizes="32x32" />
 <link rel="icon" href="https://www.demconvention.com/wp-content/uploads/2020/03/DNC_2020_Logo_Icon-1.png?w=150" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://www.demconvention.com/wp-content/uploads/2020/03/DNC_2020_Logo_Icon-1.png?w=150" />
 <meta name="msapplication-TileImage" content="https://www.demconvention.com/wp-content/uploads/2020/03/DNC_2020_Logo_Icon-1.png?w=150" />
-<!-- Jetpack Google Analytics -->
-			<script type='text/javascript'>
-				var _gaq = _gaq || [];
-				_gaq.push(['_setAccount', 'UA-76676252-1']);
-_gaq.push(['_trackPageview']);
-				(function() {
-					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-					ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-				})();
-			</script>
 
 			<link rel="stylesheet" href="https://use.typekit.net/rmt7nyf.css" />
 	</head>
@@ -134,30 +91,6 @@ _gaq.push(['_trackPageview']);
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX528GP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
 	<a href="#maincontent" class="visibility-hidden skip-link">Skip to main content</a>
-
-	
-	<div class="acctoggle">
-  <noscript>
-	<span class="sr-only">You have Javascript disabled. Please enable JavaScript to use this feature</span>
-  </noscript>
-  <div class="acctoggle__ctrl">
-	<div class="tool">
-	  <span>Toggle High Contrast</span>
-	</div>
-	<button class="acctoggle__contrast">
-	  <span class="sr-only">Click this button to toggle high contrast	  </span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.7 28.7">
-  <path d="M14.3 0C6.5 0 0 6.5 0 14.3c0 7.9 6.5 14.3 14.3 14.3 7.9 0 14.3-6.5 14.3-14.3C28.7 6.5 22.2 0 14.3 0zm0 3.6c6 0 10.8 4.8 10.8 10.8 0 6-4.8 10.8-10.8 10.8V3.6z"/>
-</svg>	</button>
-  </div>
-  <div class="acctoggle__ctrl">
-	<div class="tool">
-	  <span>Toggle Large Font Size</span>
-	</div>
-	<button class="acctoggle__fontsize">
-	  <span class="sr-only">Click this button to toggle font size</span>
-	  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.5 23.5"><path class="st0" d="M23.9 23.5H18V4.6h-6.7V0h19.2v4.6h-6.7v18.9zM6.3 22.4h-3V13H0v-2.3h9.6V13H6.3v9.4z"/></svg>	</button>
-  </div>
-</div>
 
 	<div id="main-container-wrap" class="container-wrap">
 	<div class="top">
@@ -381,128 +314,12 @@ _gaq.push(['_trackPageview']);
 	</header><!-- .main-header -->
 </div><!-- .top -->
 
-	
-<div class="social-side-nav behind" aria-hidden="true">
-	<div class="social-side">
-		<div id="socialTrigger" class="social-side__trigger">
-			<div class="social-side__inner">
-				<svg class="connected-svg" width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path
-    class="connected-svg__inner"
-    d="M18.458 0C16.2008 0 14.3562 1.80486 14.3562 4.01357C14.3562 4.53835 14.4556 5.04784 14.6446 5.50823L6.84699 9.74128C6.11839 9.09539 5.15715 8.69608 4.10178 8.69608C1.84454 8.69608 0 10.5009 0 12.7096C0 14.9184 1.84454 16.7232 4.10178 16.7232C5.16132 16.7232 6.12808 16.3285 6.85767 15.678L14.6553 19.9111C14.4631 20.3748 14.3562 20.8763 14.3562 21.4057C14.3562 23.6144 16.2008 25.4193 18.458 25.4193C20.7153 25.4193 22.5598 23.6144 22.5598 21.4057C22.5598 19.197 20.7153 17.3922 18.458 17.3922C17.2291 17.3922 16.1242 17.9279 15.371 18.7718L7.71221 14.6119C8.02589 14.0453 8.20356 13.3965 8.20356 12.7096C8.20356 12.0194 8.02877 11.376 7.71221 10.8074L15.371 6.64748C16.1242 7.49234 17.2283 8.02715 18.458 8.02715C20.7153 8.02715 22.5598 6.22228 22.5598 4.01357C22.5598 1.80486 20.7153 0 18.458 0ZM18.458 1.33786C19.9763 1.33786 21.1925 2.5279 21.1925 4.01357C21.1925 5.49926 19.9763 6.68929 18.458 6.68929C16.9397 6.68929 15.7235 5.49926 15.7235 4.01357C15.7235 2.5279 16.9397 1.33786 18.458 1.33786ZM4.10178 10.0339C5.62009 10.0339 6.8363 11.224 6.8363 12.7096C6.8363 14.1953 5.62009 15.3854 4.10178 15.3854C2.58347 15.3854 1.36726 14.1953 1.36726 12.7096C1.36726 11.224 2.58347 10.0339 4.10178 10.0339ZM18.458 18.73C19.9763 18.73 21.1925 19.92 21.1925 21.4057C21.1925 22.8914 19.9763 24.0814 18.458 24.0814C16.9397 24.0814 15.7235 22.8914 15.7235 21.4057C15.7235 19.92 16.9397 18.73 18.458 18.73Z"
-    />
-</svg>
-			</div>
-			<div class="social-side__slide">
-				
-<div class="social links flex-list">
-	  <ul>
-		<li class="copy-link">
-	<a
-	  class="click-to-copy"
-	  data-href="https://www.demconvention.com/profile-image/"
-	>
-	  <i class="fa fa-link" aria-hidden="true"></i>
-	  <div class="click-to-copy-check"><i class="fa fa-check"></i></div>
-	</a>
-  </li><!-- .click-to-copy -->
-	<li class="facebook">
-	  <a
-		href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.demconvention.com%2Fprofile-image%2F&t=Create your #DemConvention Profile Image"
-		class="social-pop"
-	  ><span class="visibility-hidden">Share this page on Facebook</span>
-		<i class="fa fa-facebook" aria-hidden="true"></i>
-	  </a>
-	</li><!-- .facebook -->
-	<li class="twitter">
-	  <a
-		href="http://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.demconvention.com%2Fprofile-image%2F&text=Get+ready+for+the+2020+%23DemConvention+and+update+your+profile+picture+with+one+of+our+many+fun+frames.																&via=DemConvention		"
-		class="social-pop"
-	  ><span class="visibility-hidden">Share this page on Twitter</span>
-		<i class="fa fa-twitter" aria-hidden="true"></i>
-	  </a>
-	</li><!-- .twitter -->
-	<li class="email">
-	  <a
-		href="#"
-		class="addthis_button_email"
-		addthis:title="Create your #DemConvention Profile Image - 2020 Democratic National Convention"
-		addthis:url="https://www.demconvention.com/profile-image/"
-	  ><span class="visibility-hidden">Share this page via Email</span>
-		<svg viewBox="0 0 24 18" fill="none" role="img" aria-labelledby="mail-icon-title mail-icon-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="mail-icon-title">Mail Icon</title>
-  <desc id="mail-icon-desc">Rectangle in the shape of an envelope</desc>
-<path fill="currentColor" d="M23.0001 -1.13292e-06C23.1163 0.000771589 23.2311 0.0250957 23.3377 0.0715019C23.4443 0.117908 23.5403 0.185433 23.6201 0.269999C23.7316 0.357753 23.8231 0.468232 23.8886 0.594095C23.9542 0.719959 23.9921 0.858325 24.0001 0.999999V16.26C24.0161 16.3948 23.9947 16.5314 23.9382 16.6549C23.8818 16.7783 23.7925 16.8839 23.6801 16.96C23.6024 17.0478 23.5069 17.1182 23.4001 17.1664C23.2932 17.2147 23.1773 17.2398 23.0601 17.24H1.00005C0.880817 17.2492 0.761001 17.2325 0.648813 17.1911C0.536624 17.1496 0.434713 17.0845 0.350055 17C0.285508 16.9761 0.227456 16.9375 0.180564 16.8871C0.133672 16.8367 0.0992469 16.7761 0.080055 16.71C0.0257354 16.5662 -0.00139203 16.4137 5.49802e-05 16.26V0.999999C0.0042832 0.860644 0.0376043 0.723713 0.0978793 0.597997C0.158154 0.472281 0.244051 0.360557 0.350055 0.269999C0.433229 0.181697 0.534143 0.111991 0.646168 0.0654572C0.758194 0.0189235 0.878796 -0.00338431 1.00005 -1.13292e-06H23.0001ZM8.19005 8.77L1.87005 3.28V14.47L8.19005 8.77ZM20.5101 2.22H3.43006L11.9301 9.75L20.5101 2.22ZM14.3501 10L12.5601 11.68H11.3101L9.63006 10L3.63006 15.39H20.2801L14.3501 10ZM15.7601 8.79L22.1101 14.49V3.28L15.7601 8.79Z"/>
-</svg>
-	  </a>
-	</li><!-- .email -->
-
-	<!--
-	<li class="print">
-	  <a href="#" class="js-print">
-		<i class="fa fa-print" aria-hidden="true"></i>
-	  </a>
-	</li>
-	-->
-  </ul>
-</div><!-- .social.links -->
-			</div><!-- .share-slide -->
-		</div><!-- .social-side -->
-	</div>
-</div><!-- .social-nav -->
-
 	<main id="maincontent">
 
 	<div class="content" id="scrolled">
 
 		
 		<div data-module class="progen">
-
-			<div class="progen__topper-social topper-social">
-				<p>Follow</p>
-				<nav
-				class="social links"
-				role="navigation"
-				>
-				<ul>
-							  <li class="facebook">
-		<a href="https://www.facebook.com/demconvention" target="_blank">
-		  <span class="visibility-hidden">
-			  Facebook		  </span>
-		  <i class="fa fa-facebook" aria-hidden="true"></i>
-		</a>
-	  </li>
-					  <li class="twitter">
-		<a href="https://twitter.com/DemConvention" target="_blank">
-		  <span class="visibility-hidden">
-			  Twitter		  </span>
-		  <i class="fa fa-twitter" aria-hidden="true"></i>
-		</a>
-	  </li>
-					  <li class="instagram">
-		<a href="https://www.instagram.com/demconvention/" target="_blank">
-		  <span class="visibility-hidden">
-			  Instagram		  </span>
-		  <i class="fa fa-instagram" aria-hidden="true"></i>
-		</a>
-	  </li>
-					  <li class="youtube-play">
-		<a href="https://www.youtube.com/demconvention" target="_blank">
-		  <span class="visibility-hidden">
-			  YouTube		  </span>
-		  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-		</a>
-	  </li>
-					  <li class="snapchat-ghost">
-		<a href="https://www.snapchat.com/add/demconvention" target="_blank">
-		  <span class="visibility-hidden">
-			  Snapchat		  </span>
-		  <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
-		</a>
-	  </li>
-		</ul>
-				</nav><!-- .social.links -->
-			</div><!-- .topper-social -->
 
 			<div class="container">
 				<div class="row-center">
@@ -672,159 +489,6 @@ _gaq.push(['_trackPageview']);
 		</div>
 
 
-			
-	<div data-module data-module-seen-threshold="0.15" class="bottom-cta social-hide">
-	<a id="bottom-cta" name="bottom-cta" class="jumplink-anchor"></a>
-
-	<div class="cta__container">
-		<div class="cta__media advanced">
-						<div class="cta__media__inner">
-				<div class="cta__media__inner__form" data-beat="1" data-beat-bottom-cta="1">
-											<h3>Commit to Watch the Convention</h3>
-																<p>Join your fellow Americans and tune in August 17-20!</p>
-					
-					<div class="cta__media__inner__form__inner">
-
-						
-							<div class="cta__ninja-form embedded-ninja">
-
-									<noscript class="ninja-forms-noscript-message">
-    Notice: JavaScript is required for this content.</noscript><div id="nf-form-19-cont" class="nf-form-cont" aria-live="polite" aria-labelledby="nf-form-title-19" aria-describedby="nf-form-errors-19" role="form">
-
-    <div class="nf-loading-spinner"></div>
-
-</div>
-        <!-- TODO: Move to Template File. -->
-        <script>var formDisplay=1;var nfForms=nfForms||[];var form=[];form.id='19';form.settings={"objectType":"Form Setting","editActive":true,"title":"Global Commit To Watch - Bottom CTA","created_at":"2020-06-29 16:47:52","default_label_pos":"above","show_title":0,"clear_complete":"1","hide_complete":"1","logged_in":"","wrapper_class":"","element_class":"","key":"btmcta_1234","add_submit":"0","currency":"","unique_field_error":"A form with this value has already been submitted.","not_logged_in_msg":"","sub_limit_msg":"The form has reached its submission limit.","calculations":[],"conditions":[],"mp_breadcrumb":"1","mp_progress_bar":"1","mp_display_titles":"0","formContentData":[{"formContentData":["firstname_mc","email_mc","zip_mc","phone_mc","sign_up_1596803007960"],"order":0,"type":"part","clean":true,"title":"Part Title","key":"xlhzzsv"}],"allow_public_link":0,"embed_form":"","changeEmailErrorMsg":"Please enter a valid email address!","changeDateErrorMsg":"Please enter a valid date!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","formErrorsCorrectErrors":"Please correct errors before submitting this form.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","drawerDisabled":false,"manual_key":true,"ninjaForms":"Ninja Forms","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","formHoneypot":"If you are a human seeing this field, please leave it empty.","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":"&#36;","thousands_sep":",","decimal_point":".","siteLocale":"en_US","dateFormat":"m\/d\/Y","startOfWeek":"1","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"],"currency_symbol":"","beforeForm":"","beforeFields":"","afterFields":"","afterForm":""};form.fields=[{"objectType":"Field","objectDomain":"fields","editActive":false,"order":1,"type":"firstname","label":"Name","key":"firstname_mc","label_pos":"above","required":1,"default":"","placeholder":"First Name","container_class":"","element_class":"","admin_label":"","help_text":"","custom_name_attribute":"fname","personally_identifiable":1,"value":"","drawerDisabled":"","manual_key":1,"field_label":"Name","field_key":"firstname_mc","id":238,"beforeField":"","afterField":"","parentType":"firstname","element_templates":["firstname","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":2,"type":"email","label":"Email","key":"email_mc","label_pos":"above","required":1,"default":"","placeholder":"Email","container_class":"","element_class":"","admin_label":"","help_text":"","custom_name_attribute":"email","personally_identifiable":1,"value":"","manual_key":1,"drawerDisabled":"","field_label":"Email","field_key":"email_mc","id":239,"beforeField":"","afterField":"","parentType":"email","element_templates":["email","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":3,"type":"zip","label":"Zip","key":"zip_mc","label_pos":"above","required":1,"default":"","placeholder":"Zip Code","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":1,"admin_label":"","help_text":"","mask":"","custom_mask":"","custom_name_attribute":"zip","personally_identifiable":"","value":"","drawerDisabled":false,"field_label":"Zip","field_key":"zip_mc","id":240,"beforeField":"","afterField":"","parentType":"zip","element_templates":["zip","textbox","input","textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":4,"type":"phone","label":"Phone","key":"phone_mc","label_pos":"above","required":1,"default":"","placeholder":"Phone","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":1,"admin_label":"","help_text":"","mask":"","custom_mask":"","custom_name_attribute":"phone","personally_identifiable":1,"value":"","drawerDisabled":"","field_label":"Phone","field_key":"phone_mc","id":242,"beforeField":"","afterField":"","parentType":"textbox","element_templates":["tel","textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":6,"type":"submit","label":"Sign Up","processing_label":"Processing","container_class":"","element_class":"","key":"sign_up_1596803007960","field_label":"Submit","field_key":"submit_1591710685552","drawerDisabled":false,"id":241,"beforeField":"","afterField":"","value":"","label_pos":"above","parentType":"textbox","element_templates":["submit","button","input"],"old_classname":"","wrap_template":"wrap-no-label"}];nfForms.push(form);</script>
-        <script id="tmpl-nf-mp-form-content" type="text/template">
-	<div class="nf-mp-header"></div>
-	<div class="nf-mp-body"></div>
-	<div class="nf-mp-footer"></div>
-</script>
-
-
-<script id="tmpl-nf-mp-header" type="text/template">
-	{{{ data.renderProgressBar() }}}
-	{{{ data.renderBreadcrumbs() }}}
-	{{{ data.renderPartTitle() }}}
-</script>
-<script id="tmpl-nf-mp-part-title" type="text/template">
-	<h3>
-		{{{ data.title }}}
-	</h3>
-</script>
-
-<script id="tmpl-nf-mp-footer" type="text/template">
-	{{{ data.renderNextPrevious() }}}
-</script>
-
-<script id="tmpl-nf-mp-next-previous" type="text/template">
-	<ul class="nf-next-previous">
-		<# if ( data.showPrevious ) { #>
-		<li class="nf-previous-item">
-			<input type="button" class="nf-previous" value="{{{ data.prevLabel }}}" />
-		</li>
-		<# } #>
-
-		<# if ( data.showNext ) { #>
-		<li class="nf-next-item">
-			<input type="button" class="nf-next" value="{{{ data.nextLabel }}}" />
-		</li>
-		<# } #>
-	</ul>
-</script>
-
-<script id="tmpl-nf-mp-breadcrumbs" type="text/template">
-	<ul class="nf-breadcrumbs">
-		<# _.each( data.parts, function( part, index ) { #>
-		<li class="{{{ ( data.currentIndex == index ) ? 'active' : '' }}} {{{ ( part.errors ) ? 'errors' : '' }}}">
-			<a href="#" class="nf-breadcrumb" data-index="{{{ index }}}">{{{ ( part.errors ) ? '' : '' }}} {{{ part.title }}}</a>
-		</li>
-		<# } ); #>
-	</ul>
-</script>
-
-<script id="tmpl-nf-mp-progress-bar" type="text/template">
-    <div class="nf-progress-container">
-        <div class="nf-progress" style="width: {{{ data.percent }}}%;"></div>
-    </div>
-</script>
-																			<div class="cta__ninja-form__disclaimer embedded-disclaimer">
-											<p class="disclaimer">Sign up to get texts. By providing your phone number, you are consenting to receive periodic text messages and calls from the DNC for the number provided. For SMS, message and data rates may apply. Message frequency varies. Text STOP to end. Text HELP for help. </p>
-										</div>
-																</div>
-
-						
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cta__quicklink">
-			<div class="cta__quicklink__stripes">
-				<div class="cta__quicklink__stripes__inner">
-					<div class="stripe"></div>
-					<div class="stripe"></div>
-					<div class="stripe"></div>
-					<div class="stripe"></div>
-					<div class="stripe"></div>
-				</div>
-			</div>
-			<div class="cta__quicklink__inner">
-									<div class="cta__quicklink__inner__content" data-beat="2" data-beat-bottom-cta="2">
-																							<div class="quicklink">
-										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.96407L4.32444 8.03996L2.67556 13.0345L7 9.95859L11.3556 13.0345L9.70667 8.03996L14 4.96407H8.64889L7 0L5.35111 4.96407H0Z" fill="currentColor"/>
-</svg>
-										<div class="quicklink__link">
-											<a
-											href="https://www.demconvention.com/get-involved/"
-											class="link"
-											target=""
-											>
-											<h2><span>Get Involved<span></h2>
-										</a>
-										</div>
-									</div>
-																																	<div class="quicklink">
-										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.96407L4.32444 8.03996L2.67556 13.0345L7 9.95859L11.3556 13.0345L9.70667 8.03996L14 4.96407H8.64889L7 0L5.35111 4.96407H0Z" fill="currentColor"/>
-</svg>
-										<div class="quicklink__link">
-											<a
-											href="https://www.demconvention.com/schedule"
-											class="link"
-											target=""
-											>
-											<h2><span>Schedule<span></h2>
-										</a>
-										</div>
-									</div>
-																					</div>
-							</div>
-			<div class="cta__quicklink__logo">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 103.3" style="enable-background:new 0 0 300 103.3;" xml:space="preserve">
-	 <path class="svg-main-logo ml-state" d="M248.4,0.1c-28.4,0-51.5,23-51.5,51.5c0,28.4,23,51.5,51.5,51.5c28.4,0,51.5-23,51.5-51.5c0,0,0,0,0,0
-	 	C299.9,23.2,276.8,0.1,248.4,0.1z M284,42.4l-0.6,3.5l-2.7,1.8l-1.5,4.5l1,3.6l-6.6,9.5l4.1,11.7l-3.1-0.6l-3.6-4.2l-1-3.7l-1.9-1.6
-	 	h-7.9l-2.8,3.8l-6.3-1.5l-6.2,4.3V77l-4-1.5l-4.1-5.7l-2.2,0.4l-5.1-5.1l-2.6,0.9L213,57.1l-3-13.8l4.5-9.9l39.5,3.1l7.4-1.4l-3,7.2
-	 	l2.7,4.8l1.4-2.9l-1-2.5l1.8-3.8l2.7,1.7l2,3l-1.3,2.9l1.8,0.6L281,39l2.6-4.3h2l2.1,4.8L284,42.4z"/>
-	<path class="svg-main-logo ml-two" d="M118,73.1c9.9-9,24.5-18.5,35.6-26c5.6-3.8,8.9-8,8.9-13.5c0-6.4-4.1-10.5-12.1-10.5c-4.9,0-8.3,1.3-10.6,4.4
-		c-2.7,3.4-3.8,7.2-3.8,13.9h-27.7c0-12,1.2-17.1,5-23.9C118.8,7.5,131.6,0,151,0c26.9,0,40.6,14,40.6,32.5c0,9-2.5,16.2-8.3,21.9
-		c-10,9.7-22.9,15.7-33.7,24.2v0.3H191v24.4h-84.5C106.5,88.8,109.5,81,118,73.1z"/>
-	<polygon class="svg-main-logo-lb ml-arrow" points="103.3,51.6 0,85.2 24.4,51.6 0,18.1 		"/>
-	<path class="svg-main-logo ml-d" d="M61.2,0.9C58.1,0.3,54.9,0,51.6,0H0v18.1l39.5,12.8L61.2,0.9z"/>
-	<polygon class="svg-main-logo ml-d" points="0,85.2 24.4,51.6 0,18.1 		"/>
-	<path class="svg-main-logo ml-d" d="M63.8,1.5v37.4l39.4,12.8l0,0C103.3,27.8,87,7.1,63.8,1.5z"/>
-	<path class="svg-main-logo ml-d" d="M63.8,101.8c23.1-5.6,39.4-26.4,39.4-50.2l0,0L63.8,64.5V101.8z"/>
-	<path class="svg-main-logo ml-d" d="M61.2,102.4c-3.2,0.6-6.4,0.9-9.6,0.9H0V85.2l39.5-12.8L61.2,102.4z"/>
-</svg>
-			</div>
-		</div>
-
-
-	</div><!-- .container -->
-	</div><!-- .bottom-cta -->
 	</div><!-- .content -->
 	</main>
 
@@ -925,27 +589,38 @@ class="social-hide main-site-footer"
 
 </div> <!-- #main-container-wrap -->
 
-<link rel='stylesheet' id='all-css-0' href='https://www.demconvention.com/_static/??-eJyVjkEOwjAMBD+E66AiJA6It1ht2holTtR1VPF7cuAB5TqaHS0fldSm1OYIngCeBZtOxTBktaGTC3elA4/mXFNb1cCm9hZayp7BAkT/jRU1yYdKVdPeoKTr5v9Wlq6RHBElx7MvKLfkSlV2P3folZ/Xe7iFMI7h8QU7M2Il' type='text/css' media='all' />
-<script type='text/javascript' src='https://www.demconvention.com/wp-includes/js/jquery/ui/core.min.js?m=1604003310g'></script>
+<!-- Jetpack Google Analytics -->
+			<script type='text/javascript'>
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-76676252-1']);
+_gaq.push(['_trackPageview']);
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+<link rel='stylesheet' id='all-css-0' href='https://www.demconvention.com/_static/??-eJyVjkEKwzAMBD9URZhSmhxK3yIcJ1GxZRHJhPy+PvQB6XWYHRYPBZaY25wMoxnOZBvHKjYUlqGTG3alA0/iqLmtLIbC8iFY6l4MySz5b8ymmU6oysK9AZnXzf+tLF0DOpLVkq6+gNKyMyjtfu3Qu7zCYxqn8XkP4Qs79mI/' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.demconvention.com/wp-includes/js/jquery/ui/core.min.js?m=1598987312g'></script>
 <script src='https://www.demconvention.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4' id='jquery-ui-datepicker-js'></script>
 <script id='jquery-ui-datepicker-js-after'>
 jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
 </script>
 <script id='nf-front-end-js-extra'>
 var nfi18n = {"ninjaForms":"Ninja Forms","changeEmailErrorMsg":"Please enter a valid email address!","changeDateErrorMsg":"Please enter a valid date!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","formErrorsCorrectErrors":"Please correct errors before submitting this form.","formHoneypot":"If you are a human seeing this field, please leave it empty.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":"$","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","thousands_sep":",","decimal_point":".","siteLocale":"en_US","dateFormat":"m\/d\/Y","startOfWeek":"1","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"]};
-var nfFrontEnd = {"adminAjax":"https:\/\/www.demconvention.com\/wp-admin\/admin-ajax.php","ajaxNonce":"254d588bb1","requireBaseUrl":"https:\/\/www.demconvention.com\/wp-content\/plugins\/ninja-forms\/assets\/js\/","use_merge_tags":{"user":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"post":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"system":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"fields":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"calculations":{"html":"html","hidden":"hidden","note":"note","unknown":"unknown"}},"opinionated_styles":"light"};
+var nfFrontEnd = {"adminAjax":"https:\/\/www.demconvention.com\/wp-admin\/admin-ajax.php","ajaxNonce":"b4e4370af1","requireBaseUrl":"https:\/\/www.demconvention.com\/wp-content\/plugins\/ninja-forms\/assets\/js\/","use_merge_tags":{"user":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"post":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"system":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"fields":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listimage":"listimage","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr","mailchimp-optin":"mailchimp-optin","file_upload":"file_upload"},"calculations":{"html":"html","hidden":"hidden","note":"note","unknown":"unknown"}},"opinionated_styles":"light"};
 </script>
-<script type='text/javascript' src='https://www.demconvention.com/_static/??-eJyl0F0KAjEMBOALWdNlxTfxLP3Jul3btCStXt8iKLiIoD5nPmYIXIsK5GLzKLAINPLI4jLjNgXaLrKBVcIad7aZXu4uU0WqUGI7BRKgQItRU+YkYESw3mUHMHGPKiSvPBb5w69pnTH1gaVxifhAtoXo4dLjmeXd4A/K9ldEVCYi1y9pMlKRf+ub0finPabDsNc7rcdx0MsN1+ufcg=='></script>
-<script async="async" defer="defer" src='//s7.addthis.com/js/300/addthis_widget.js?ver=1604196000#pubid=ra-51c770552f90ce31' id='add_this-js'></script>
-<script async="async" defer="defer" src='https://addevent.com/libs/atc/1.6.1/atc.min.js?ver=1604196000' id='addevent-js'></script>
+<script type='text/javascript' src='https://www.demconvention.com/_static/??-eJyl0NEKwjAMBdAfsoYp4vYgfkvXZq61TUvS6u9bBAWHCOpz7uFeAtesHJlQLQp4gUoWWUxiXEdHay8rWCRGbc5jope7SVSQCuRQT44EyJHXakocBbQIlrtsACZuUYVklcUsf/glLTPGNjBXzgEfaKwuWLi0eGJ5N/iDGtsrAiodkMuXNGopyL/1zajt0x7jodsN/dDvt93G3wDY2Z+V'></script>
+<script async="async" defer="defer" src='//s7.addthis.com/js/300/addthis_widget.js?ver=1601226000#pubid=ra-51c770552f90ce31' id='add_this-js'></script>
+<script async="async" defer="defer" src='https://addevent.com/libs/atc/1.6.1/atc.min.js?ver=1601226000' id='addevent-js'></script>
 <script id='nf-mp-front-end-js-extra'>
 var nfMPSettings = {"prevLabel":"Previous","nextLabel":"Next"};
 </script>
 <script type='text/javascript' src='https://www.demconvention.com/_static/??-eJyNzEEKAjEMheEL2QkDyuBCPEtnmo4paVqaFD2+deFOZN728f3wrG4rYigG9sCMCrW3ygheFU1h7cQB8GUQ/dpomzLJlPQEx+DaJTC62kokxh3ll6/cdxIFIUnexdKyfr5ARkU86zeZFIaG2IZzKOFIJ3c2ctU3+1O559t8uS7LPHZOb7sNZug='></script>
-<script type='text/javascript' src='https://stats.wp.com/e-202044.js' async='async' defer='defer'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-202039.js' async='async' defer='defer'></script>
 <script type='text/javascript'>
 	_stq = window._stq || [];
-	_stq.push([ 'view', {v:'ext',j:'1:9.0.2.1',blog:'174012960',post:'15189',tz:'-5',srv:'www.demconvention.com'} ]);
+	_stq.push([ 'view', {v:'ext',j:'1:8.9.1',blog:'174012960',post:'15189',tz:'-5',srv:'www.demconvention.com'} ]);
 	_stq.push([ 'clickTrackerInit', '174012960', '15189' ]);
 </script>
 <script id="tmpl-nf-layout" type="text/template">
@@ -1228,5 +903,5 @@ window.addeventasync = function(){
 </script>
 
 
-</body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-d738c8070f86ea68e66","applicationID":"387338526","transactionName":"NQFVYhcHChcHV0BdWgxLdlURDwsKSUBRWUUOBUNTSBYWCwBdWFEYBQFZUxcHEAsU","queueTime":0,"applicationTime":703,"atts":"GUZCFF8dGUhEVRYOTh8Z","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
